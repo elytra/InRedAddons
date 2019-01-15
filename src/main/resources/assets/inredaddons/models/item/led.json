@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "side": "inredaddons:block/led_side_item",
+    "end": "inredaddons:block/led_end_glow"
+  }
+}

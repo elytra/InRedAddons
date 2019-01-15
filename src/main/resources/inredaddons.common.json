@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "package": "com.elytradev.inredaddons.mixin",
+  "refmap": "mixins.encodertweaks.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixinCauldron",
+    "MixinLecternBlockEntity"
+  ]
+}

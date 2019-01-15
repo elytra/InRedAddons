@@ -1,0 +1,13 @@
+{
+  "id": "inredaddons",
+  "name": "InRed Addons",
+  "version": "1.0",
+  "side": "universal",
+  "initializers": [
+    "com.elytradev.inredaddons.InRedAddons",
+    "com.elytradev.inredaddons.InRedAddonsClient"
+  ],
+  "mixins": {
+    "common": "inredaddons.common.json"
+  }
+}

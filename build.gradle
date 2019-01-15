@@ -1,0 +1,54 @@
+buildscript {
+	repositories {
+		jcenter()
+		maven {
+			name = 'Fabric'
+			url = 'http://maven.modmuss50.me/'
+		}
+	}
+	dependencies {
+		classpath "net.fabricmc:fabric-loom:0.1.0-SNAPSHOT"
+	}
+}
+
+plugins {
+	id 'java'
+	id 'eclipse'
+	id 'idea'
+}
+
+apply plugin: net.fabricmc.loom.LoomGradlePlugin
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+archivesBaseName = "inredaddons"
+version = "1.0"
+
+minecraft {
+	refmapName = 'mixins.inredaddons.refmap.json'
+}
+
+repositories {
+	jcenter()
+	mavenCentral()
+	maven {
+		url 'https://repo.elytradev.com/'
+	}
+	flatDir {
+		// here until farfetchd gets stuff in a maven
+		dirs 'libs'
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:19w02a"
+	mappings "net.fabricmc:yarn:19w02a.12"
+	modCompile "net.fabricmc:fabric-loader:0.3.2.92"
+	modCompile "net.fabricmc:fabric:0.1.4.71"
+	modCompile 'com.elytradev:infraredstone-fabric:19w02a-1.0.2.44'
+	modCompile "io.github.prospector.silk:SilkAPI:1.0.0-26"
+	//needed to work in dev till jar-in-jar
+	modCompile name: "qcommon-architect-1.0.0"
+	modCompile name: "qcommon-croco-1.0.3"
+}

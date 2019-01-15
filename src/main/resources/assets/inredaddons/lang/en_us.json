@@ -1,0 +1,7 @@
+{
+  "block.inredaddons.led": "Light-Emitting Diode",
+  "block.inredaddons.rgb_led": "Color Light-Emitting Diode",
+
+  "msg.inredadd.multimeter.led": "LED brightness: ",
+  "msg.inredadd.multimeter.rgbled": "RGB LED hue:"
+}
