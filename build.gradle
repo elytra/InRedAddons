@@ -46,7 +46,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:19w02a.12"
 	modCompile "net.fabricmc:fabric-loader:0.3.2.92"
 	modCompile "net.fabricmc:fabric:0.1.4.71"
-	modCompile 'com.elytradev:infraredstone-fabric:19w02a-1.0.2.44'
+	modCompile 'com.elytradev:infraredstone-fabric:19w02a-1.0.2.45'
 	modCompile "io.github.prospector.silk:SilkAPI:1.0.0-26"
 	//needed to work in dev till jar-in-jar
 	modCompile name: "qcommon-architect-1.0.0"
