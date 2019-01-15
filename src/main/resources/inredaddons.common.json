@@ -5,6 +5,8 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "MixinCauldron",
-    "MixinLecternBlockEntity"
+    "MixinLecternBlockEntity",
+    "MixinCake",
+    "MixinEndPortalFrame"
   ]
 }
